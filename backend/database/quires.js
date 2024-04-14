@@ -1,3 +1,5 @@
+//Quries for Postgre DB
+
 exports.getDoctorByEmail = "SELECT * FROM doctor WHERE email = $1";
 
 exports.registerDoctor =

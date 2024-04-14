@@ -5,6 +5,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { getPatientById, updatePatient } from "../services/DoctorService";
 import toast, { Toaster } from "react-hot-toast";
 
+// updatePatientform to update the patient details
 const UpdatePatientForm = () => {
   const { id } = useParams();
   const navigate = useNavigate();

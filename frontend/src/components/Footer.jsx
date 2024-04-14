@@ -1,6 +1,9 @@
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 
+
+//Footer of the website
+
 const Footer = () => {
   return (
     <div>

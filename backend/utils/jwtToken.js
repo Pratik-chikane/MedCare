@@ -1,5 +1,7 @@
 const jwt = require("jsonwebtoken");
 
+
+//Method to generate Token Which will passed to frontend
 exports.generateToken = (user) => {
   const payload = {
     user: {

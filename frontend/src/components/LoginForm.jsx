@@ -3,6 +3,9 @@ import { Button, Grid, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import { loginDoctor } from "../services/AuthService";
+
+//Login form for doctor
+
 const LoginForm = () => {
   const navigate = useNavigate();
 

@@ -10,6 +10,8 @@ import UpdatePatientForm from "./components/UpdatePatientForm";
 import ViewPatients from "./components/ViewPatients";
 import { Route, Routes, Navigate } from "react-router-dom";
 
+//Routing for all components
+
 function App() {
   const hasToken = () => {
     const token = localStorage.getItem("jwt");

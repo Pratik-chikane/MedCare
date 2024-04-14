@@ -5,6 +5,9 @@ import { deletePatientById, getPatients } from "../services/DoctorService";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 
+
+// ViewPatients to list all patients
+
 const ViewPatients = () => {
   const [patients, setPatients] = useState([]);
 

@@ -3,6 +3,9 @@ const quries = require("../database/quires");
 const bcrypt = require("bcrypt");
 const { generateToken } = require("../utils/jwtToken");
 
+
+//Service logic fpr registration and login 
+
 exports.registerDoctor = async (req, res) => {
   const { email, name, password, experience, specialization } = req.body;
   try {

@@ -12,6 +12,10 @@ import {
   updateMedicationById,
 } from "../services/DoctorService";
 
+
+// PatientPage which will show patient details also can add 
+// and view medications for patients
+
 const PatientPage = () => {
   const formRef = useRef(null);
   const [patient, setPatient] = useState();

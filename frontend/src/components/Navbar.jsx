@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../services/AuthService";
 
+// Navbar of website
+
 const Navbar = () => {
   const navigate = useNavigate();
   const handleLogout = () => {

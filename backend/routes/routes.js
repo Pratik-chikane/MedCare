@@ -15,6 +15,7 @@ const {
   deletePatientById,
 } = require("../controller/doctorController");
 
+//Routes for all backend API
 router
   .post("/register", registerDoctor)
   .post("/login", loginDoctor)

@@ -1,4 +1,7 @@
 import { api } from "../config/ApiConfig";
+
+// Methods to call backend API
+
 export const getPatients = async () => {
   try {
     const response = await api.get("/api/v1/patients");

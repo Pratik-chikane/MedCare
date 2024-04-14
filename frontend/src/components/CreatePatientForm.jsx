@@ -7,6 +7,8 @@ import { registerPatient } from "../services/DoctorService";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 
+
+// CreatePatientForm to create patient which is reusing PatientForm component
 const CreatePatientForm = () => {
   const navigate = useNavigate();
   const handleSubmit = async (formData) => {

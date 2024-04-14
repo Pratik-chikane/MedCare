@@ -1,4 +1,5 @@
 import axios from "axios";
+// Methods to call backend API
 
 export const registerDoctor = async (doctorData) => {
   try {

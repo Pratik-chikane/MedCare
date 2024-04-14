@@ -1,5 +1,8 @@
 const jwt = require("jsonwebtoken");
 
+
+//Auth middleware to validate token 
+
 exports.validateToken = (req, res, next) => {
   const token =
     req.headers.authorization && req.headers.authorization.split(" ")[1];

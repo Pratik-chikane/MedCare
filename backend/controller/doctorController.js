@@ -1,6 +1,9 @@
 const pool = require("../database/connection");
 const quries = require("../database/quires");
 
+
+//service logic for all backend API
+
 exports.addPatient = async (req, res) => {
   const {
     name,
@@ -54,6 +57,7 @@ exports.getPatientById = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
 exports.getMedicationById = async (req, res) => {
   const pid = req.params.id;
   try {
@@ -73,6 +77,7 @@ exports.getAllMedicationOfPatient = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
 exports.addMedicationForPatient = async (req, res) => {
   const { name, dosage, frequency } = req.body;
   const pid = req.params.id;
@@ -106,6 +111,7 @@ exports.updateMedication = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
 exports.updatePatient = async (req, res) => {
   const id = req.params.id;
   const age = parseInt(req.body.age);
@@ -140,6 +146,7 @@ exports.updatePatient = async (req, res) => {
       res.status(500).json({ error: err.message });
     });
 };
+
 exports.deleteMedicationById = async (req, res) => {
   const id = req.params.id;
   try {
@@ -149,6 +156,7 @@ exports.deleteMedicationById = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
 exports.deletePatientById = async (req, res) => {
   const id = req.params.id;
   try {

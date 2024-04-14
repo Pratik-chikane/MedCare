@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Grid, TextField } from "@mui/material";
+
+// PatientFrom which is being used for both create patient and update patient
+
 const PatientForm = ({ onSubmit, initialValues }) => {
   const formRef = useRef(null);
   const navigate = useNavigate();
